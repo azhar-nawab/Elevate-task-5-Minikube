@@ -44,3 +44,12 @@ This project demonstrates how to set up a local Kubernetes cluster using **Minik
 
 ```bash
 minikube start --driver=docker
+
+## 📦 Apply Deployment & Service
+
+To deploy the application and expose it via NodePort:
+
+```bash
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
